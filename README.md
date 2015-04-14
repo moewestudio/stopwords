@@ -65,5 +65,5 @@ Turkish | 279 | [tr.json](dist/tr.json)
 - SMART Information Retrieval System: ftp://ftp.cs.cornell.edu/pub/smart/
 
 ## License and Copyright
-Copyright (c) 2014 Peter Graham, contributors.
+Copyright (c) 2015 Peter Graham, contributors.
 Released under the Apache-2.0 license

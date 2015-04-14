@@ -41,11 +41,22 @@ module.exports = function(grunt) {
   grunt.registerTask('stopwordsToJson', function() {
     var stopwords = getStopwords();
     for(var language in stopwords) {
-      fs.writeFileSync("dist/"+language+".json", JSON.stringify(stopwords[language]), 'utf-8', {flags: 'w+'});
+	  var languageDir = "dist/" + language + "/"; 
+	  grunt.file.mkdir(languageDir);
+      fs.writeFileSync(languageDir + language + ".json", JSON.stringify(stopwords[language]), 'utf-8', {flags: 'w+'});
     }
     fs.writeFileSync("stopwords-all.json", JSON.stringify(stopwords), 'utf-8', {flags: 'w+'});
   });
 
+  grunt.registerTask('stopwordsToTxt', function() {
+    var stopwords = getStopwords();
+    for(var language in stopwords) {
+      var languageDir = "dist/" + language + "/"; 
+	  grunt.file.mkdir(languageDir);
+      fs.writeFileSync(languageDir + language + ".txt", stopwords[language].join(), 'utf-8', {flags: 'w+'});
+    }
+  });
+  
   grunt.registerTask('stopwordsDocs', function() {
     var stopwords = getStopwords();
     var languageCodes = Object.keys(stopwords);
@@ -84,5 +95,5 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-readme');
 
-  grunt.registerTask('default', ['stopwordsToJson', 'stopwordsDocs', 'readme']);
+  grunt.registerTask('default', ['stopwordsToJson', 'stopwordsToTxt','stopwordsDocs', 'readme']);
 };
