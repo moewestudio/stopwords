@@ -80,6 +80,29 @@ module.exports = function(grunt) {
     fs.writeFileSync("docs/supported-languages.md", table, 'utf-8', {flags: 'w+'});
   });
 
+  grunt.registerTask('stopwordsHTMLLinks', function() {
+    var stopwords = getStopwords();
+    var languageCodes = Object.keys(stopwords);
+
+    var table = "There are a total of "+languageCodes.length+" supported languages:\n\n";
+	
+    var rows = [];
+	var githubUrl= 'https://raw.githubusercontent.com/moewestudio/stopwords/master/dist';
+    for (var languageCode in stopwords) {
+		  var urlPrefix = githubUrl + '/' + languageCode + '/' + languageCode + '.';
+          links = '<a href="' + urlPrefix + 'json">JSON</a> | <a href="' + urlPrefix + 'txt">TXT</a>';
+          language = languages.getLanguageInfo(languageCode);
+      rows.push([language.name, links]);
+    }
+    rows = _.sortBy(rows, function(row) {
+      return row[0]; // sort by language name
+    });
+    table += _.map(rows, function(row) {
+      return row[0] + ' (' + row[1] + ')';
+    }).join("<br/>\n");
+    fs.writeFileSync("docs/supported-languages-navigation.md", table, 'utf-8', {flags: 'w+'});
+  });
+  
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
@@ -94,6 +117,6 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-readme');
-
-  grunt.registerTask('default', ['stopwordsToJson', 'stopwordsToTxt','stopwordsDocs', 'readme']);
+  
+  grunt.registerTask('default', ['stopwordsToJson', 'stopwordsToTxt','stopwordsDocs', 'stopwordsHTMLLinks', 'readme']);
 };
