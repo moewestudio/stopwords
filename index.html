@@ -1,114 +1,175 @@
 <!doctype html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>stop words by moewestudio</title>
+    <title>stop words by MOEWE</title>
 
-	<meta name="description" content="stopwords.org provides a composition of stop words from 43 different languages as json or text format."/>
-	<link rel="canonical" href="http://www.stopwords.org/" />
-	<meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="stop words" />
-	<meta property="og:description" content="stopwords.org provides a composition of stop words from 43 different languages as json or text format." />
-	<meta property="og:url" content="http://www.stopwords.org/" />
-	<meta property="og:site_name" content="stop words" />
-	<meta name="twitter:card" content="summary"/>
-	<meta name="twitter:description" content="stopwords.org provides a composition of stop words from 43 different languages as json or text format."/>
-	<meta name="twitter:title" content="stop words"/>
-	<meta name="twitter:domain" content="stop words"/>
-	
-	<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+    <meta name="description"
+          content="stopwords.org provides a composition of stop words from 43 different languages as json or text format."/>
+    <link rel="canonical" href="http://www.stopwords.org/"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="stop words"/>
+    <meta property="og:description"
+          content="stopwords.org provides a composition of stop words from 43 different languages as json or text format."/>
+    <meta property="og:url" content="http://www.stopwords.org/"/>
+    <meta property="og:site_name" content="stop words"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:description"
+          content="stopwords.org provides a composition of stop words from 43 different languages as json or text format."/>
+    <meta name="twitter:title" content="stop words"/>
+    <meta name="twitter:domain" content="stop words"/>
+
+    <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
+</head>
+<body>
+<div class="wrapper">
+    <header>
         <h1>stop words</h1>
         <p></p>
-		<p>There are a total of 43 supported languages:</p>
-<p>
-Arabic (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/ar/ar.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/ar/ar.txt">TXT</a>)<br/>
-Armenian (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/hy/hy.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/hy/hy.txt">TXT</a>)<br/>
-Basque (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/eu/eu.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/eu/eu.txt">TXT</a>)<br/>
-Bengali (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/bn/bn.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/bn/bn.txt">TXT</a>)<br/>
-Breton (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/br/br.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/br/br.txt">TXT</a>)<br/>
-Bulgarian (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/bg/bg.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/bg/bg.txt">TXT</a>)<br/>
-Catalan (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/ca/ca.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/ca/ca.txt">TXT</a>)<br/>
-Chinese (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/zh/zh.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/zh/zh.txt">TXT</a>)<br/>
-Croatian (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/hr/hr.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/hr/hr.txt">TXT</a>)<br/>
-Czech (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/cs/cs.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/cs/cs.txt">TXT</a>)<br/>
-Danish (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/da/da.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/da/da.txt">TXT</a>)<br/>
-Dutch (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/nl/nl.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/nl/nl.txt">TXT</a>)<br/>
-English (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/en/en.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/en/en.txt">TXT</a>)<br/>
-Esperanto (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/eo/eo.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/eo/eo.txt">TXT</a>)<br/>
-Ewe (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/ee/ee.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/ee/ee.txt">TXT</a>)<br/>
-Finnish (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/fi/fi.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/fi/fi.txt">TXT</a>)<br/>
-French (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/fr/fr.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/fr/fr.txt">TXT</a>)<br/>
-Galician (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/gl/gl.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/gl/gl.txt">TXT</a>)<br/>
-German (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/de/de.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/de/de.txt">TXT</a>)<br/>
-Greek (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/el/el.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/el/el.txt">TXT</a>)<br/>
-Hebrew (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/he/he.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/he/he.txt">TXT</a>)<br/>
-Hindi (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/hi/hi.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/hi/hi.txt">TXT</a>)<br/>
-Hungarian (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/hu/hu.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/hu/hu.txt">TXT</a>)<br/>
-Indonesian (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/id/id.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/id/id.txt">TXT</a>)<br/>
-Irish (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/ga/ga.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/ga/ga.txt">TXT</a>)<br/>
-Italian (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/it/it.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/it/it.txt">TXT</a>)<br/>
-Japanese (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/ja/ja.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/ja/ja.txt">TXT</a>)<br/>
-Korean (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/ko/ko.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/ko/ko.txt">TXT</a>)<br/>
-Latin (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/la/la.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/la/la.txt">TXT</a>)<br/>
-Latvian (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/lv/lv.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/lv/lv.txt">TXT</a>)<br/>
-Marathi (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/mr/mr.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/mr/mr.txt">TXT</a>)<br/>
-Norwegian (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/no/no.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/no/no.txt">TXT</a>)<br/>
-Persian (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/fa/fa.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/fa/fa.txt">TXT</a>)<br/>
-Polish (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/pl/pl.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/pl/pl.txt">TXT</a>)<br/>
-Portuguese (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/pt/pt.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/pt/pt.txt">TXT</a>)<br/>
-Romanian (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/ro/ro.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/ro/ro.txt">TXT</a>)<br/>
-Russian (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/ru/ru.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/ru/ru.txt">TXT</a>)<br/>
-Slovak (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/sk/sk.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/sk/sk.txt">TXT</a>)<br/>
-Slovenian (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/sl/sl.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/sl/sl.txt">TXT</a>)<br/>
-Spanish (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/es/es.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/es/es.txt">TXT</a>)<br/>
-Swedish (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/sv/sv.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/sv/sv.txt">TXT</a>)<br/>
-Thai (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/th/th.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/th/th.txt">TXT</a>)<br/>
-Turkish (<a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/tr/tr.json">JSON</a> | <a href="https://raw.githubusercontent.com/moewestudio/stopwords/master/dist/tr/tr.txt">TXT</a>)
-</p>
+        <p>There are a total of 43 supported languages:</p>
+        <p>
+            Arabic (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/ar/ar.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/ar/ar.txt">TXT</a>)<br/>
+            Armenian (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/hy/hy.json">JSON</a>
+            | <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/hy/hy.txt">TXT</a>)<br/>
+            Basque (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/eu/eu.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/eu/eu.txt">TXT</a>)<br/>
+            Bengali (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/bn/bn.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/bn/bn.txt">TXT</a>)<br/>
+            Breton (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/br/br.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/br/br.txt">TXT</a>)<br/>
+            Bulgarian (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/bg/bg.json">JSON</a>
+            | <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/bg/bg.txt">TXT</a>)<br/>
+            Catalan (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/ca/ca.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/ca/ca.txt">TXT</a>)<br/>
+            Chinese (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/zh/zh.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/zh/zh.txt">TXT</a>)<br/>
+            Croatian (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/hr/hr.json">JSON</a>
+            | <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/hr/hr.txt">TXT</a>)<br/>
+            Czech (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/cs/cs.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/cs/cs.txt">TXT</a>)<br/>
+            Danish (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/da/da.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/da/da.txt">TXT</a>)<br/>
+            Dutch (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/nl/nl.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/nl/nl.txt">TXT</a>)<br/>
+            English (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/en/en.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/en/en.txt">TXT</a>)<br/>
+            Esperanto (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/eo/eo.json">JSON</a>
+            | <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/eo/eo.txt">TXT</a>)<br/>
+            Ewe (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/ee/ee.json">JSON</a> | <a
+                href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/ee/ee.txt">TXT</a>)<br/>
+            Finnish (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/fi/fi.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/fi/fi.txt">TXT</a>)<br/>
+            French (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/fr/fr.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/fr/fr.txt">TXT</a>)<br/>
+            Galician (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/gl/gl.json">JSON</a>
+            | <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/gl/gl.txt">TXT</a>)<br/>
+            German (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/de/de.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/de/de.txt">TXT</a>)<br/>
+            Greek (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/el/el.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/el/el.txt">TXT</a>)<br/>
+            Hebrew (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/he/he.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/he/he.txt">TXT</a>)<br/>
+            Hindi (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/hi/hi.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/hi/hi.txt">TXT</a>)<br/>
+            Hungarian (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/hu/hu.json">JSON</a>
+            | <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/hu/hu.txt">TXT</a>)<br/>
+            Indonesian (<a
+                href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/id/id.json">JSON</a> | <a
+                href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/id/id.txt">TXT</a>)<br/>
+            Irish (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/ga/ga.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/ga/ga.txt">TXT</a>)<br/>
+            Italian (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/it/it.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/it/it.txt">TXT</a>)<br/>
+            Japanese (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/ja/ja.json">JSON</a>
+            | <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/ja/ja.txt">TXT</a>)<br/>
+            Korean (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/ko/ko.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/ko/ko.txt">TXT</a>)<br/>
+            Latin (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/la/la.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/la/la.txt">TXT</a>)<br/>
+            Latvian (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/lv/lv.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/lv/lv.txt">TXT</a>)<br/>
+            Marathi (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/mr/mr.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/mr/mr.txt">TXT</a>)<br/>
+            Norwegian (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/no/no.json">JSON</a>
+            | <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/no/no.txt">TXT</a>)<br/>
+            Persian (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/fa/fa.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/fa/fa.txt">TXT</a>)<br/>
+            Polish (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/pl/pl.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/pl/pl.txt">TXT</a>)<br/>
+            Portuguese (<a
+                href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/pt/pt.json">JSON</a> | <a
+                href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/pt/pt.txt">TXT</a>)<br/>
+            Romanian (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/ro/ro.json">JSON</a>
+            | <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/ro/ro.txt">TXT</a>)<br/>
+            Russian (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/ru/ru.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/ru/ru.txt">TXT</a>)<br/>
+            Slovak (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/sk/sk.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/sk/sk.txt">TXT</a>)<br/>
+            Slovenian (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/sl/sl.json">JSON</a>
+            | <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/sl/sl.txt">TXT</a>)<br/>
+            Spanish (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/es/es.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/es/es.txt">TXT</a>)<br/>
+            Swedish (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/sv/sv.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/sv/sv.txt">TXT</a>)<br/>
+            Thai (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/th/th.json">JSON</a> | <a
+                href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/th/th.txt">TXT</a>)<br/>
+            Turkish (<a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/tr/tr.json">JSON</a> |
+            <a href="https://raw.githubusercontent.com/moewe-io/stopwords/master/dist/tr/tr.txt">TXT</a>)
+        </p>
 
-        <p class="view"><a href="https://github.com/moewestudio/stopwords">View the Project on GitHub <small>moewestudio/stopwords</small></a></p>
-		
-      </header>
-      <section>
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+        <p class="view"><a href="https://github.com/moewe-io/stopwords">View the Project on GitHub
+            <small>moewe-io/stopwords</small>
+        </a></p>
 
-<p>Peter Graham (<a href="https://github.com/defunkt" class="user-mention">@6</a>) started with his stopwords repository in february 2014. We (<a href="https://github.com/moewestudio" class="user-mention">@moewestudio</a>) forked this repository, did some improvements and published it as github page under stopwords.org.</p>
+    </header>
+    <section>
+        <h3>
+            <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span
+                    class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+        <p>Peter Graham (<a href="https://github.com/defunkt" class="user-mention">@6</a>) started with his stopwords
+            repository in february 2014. We (<a href="https://github.com/moewe-io"
+                                                class="user-mention">@moewe-io</a>) forked this repository, did some
+            improvements and published it as github page under stopwords.org.</p>
 
-<p>Do you miss something, found an error or want to give feedback? <a href="https://www.moewe-studio.com/contact/">Contact us</a> and we’ll help you.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://www.moewe-studio.com/">MOEWE</a><br/>
-		  <small><a href="https://www.moewe-studio.com/impressum/">Impressum</a></small></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-40497393-8");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+        <h3>
+            <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span
+                    class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-  </body>
+        <p>Do you miss something, found an error or want to give feedback? <a
+                href="https://www.moewe.io/contact/">Contact us</a> and we’ll help you.</p>
+    </section>
+    <footer>
+        <p>This project is maintained by <a href="https://www.moewe.io/">MOEWE</a><br/>
+            <small><a href="https://www.moewe.io/impressum/">Impressum</a></small>
+        </p>
+        <p>
+            <small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a>
+            </small>
+        </p>
+    </footer>
+</div>
+<script src="javascripts/scale.fix.js"></script>
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-40497393-8");
+        pageTracker._trackPageview();
+    } catch (err) {
+    }
+</script>
+
+</body>
 </html>
